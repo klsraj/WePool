@@ -7,21 +7,139 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2027846A606560C50F146538 /* Pods_WePool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B707A1602A0D12136AB5DDC /* Pods_WePool.framework */; };
 		2F90A597227BD49B00B8A080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A596227BD49B00B8A080 /* AppDelegate.swift */; };
-		2F90A599227BD49B00B8A080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A598227BD49B00B8A080 /* ViewController.swift */; };
 		2F90A59C227BD49B00B8A080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F90A59A227BD49B00B8A080 /* Main.storyboard */; };
 		2F90A59E227BD49C00B8A080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F90A59D227BD49C00B8A080 /* Assets.xcassets */; };
 		2F90A5A1227BD49C00B8A080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F90A59F227BD49C00B8A080 /* LaunchScreen.storyboard */; };
+		2F90A5AA227BD56600B8A080 /* RidePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5A9227BD56600B8A080 /* RidePost.swift */; };
+		2F90A5AC227BD5A500B8A080 /* WePoolUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5AB227BD5A500B8A080 /* WePoolUser.swift */; };
+		2F90A5AE227BD5D000B8A080 /* RideRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5AD227BD5D000B8A080 /* RideRequest.swift */; };
+		2F90A5B0227BD60100B8A080 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5AF227BD60100B8A080 /* Message.swift */; };
+		2F90A5B7227BD7BE00B8A080 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5B6227BD7BE00B8A080 /* UIColor.swift */; };
+		2F90A5B9227BD80300B8A080 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5B8227BD80300B8A080 /* UIImageView.swift */; };
+		2F90A5BB227BD83600B8A080 /* UIView+UIButtons+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5BA227BD83600B8A080 /* UIView+UIButtons+UITextField.swift */; };
+		2F90A5BD227BD85E00B8A080 /* Encodable+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5BC227BD85E00B8A080 /* Encodable+Decodable.swift */; };
+		2F90A5BF227BD88500B8A080 /* UIDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5BE227BD88500B8A080 /* UIDate.swift */; };
+		2F90A5C1227BD8A900B8A080 /* UICollectionView + UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5C0227BD8A900B8A080 /* UICollectionView + UITableView.swift */; };
+		2F90A5C3227BD8DA00B8A080 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5C2227BD8DA00B8A080 /* Constants.swift */; };
+		2F90A5CB227BD9CD00B8A080 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5CA227BD9CD00B8A080 /* LoginView.swift */; };
+		2F90A5CD227BD9F700B8A080 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5CC227BD9F700B8A080 /* SignUpView.swift */; };
+		2F90A5CF227BDA3300B8A080 /* OfferedRides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5CE227BDA3300B8A080 /* OfferedRides.swift */; };
+		2F90A5D1227BDA4D00B8A080 /* OfferedRidesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5D0227BDA4D00B8A080 /* OfferedRidesCollectionViewCell.swift */; };
+		2F90A5D3227BDA6400B8A080 /* OfferedRidesSectionHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5D2227BDA6400B8A080 /* OfferedRidesSectionHeaderCollectionViewCell.swift */; };
+		2F90A5D5227BDA7B00B8A080 /* RideDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5D4227BDA7B00B8A080 /* RideDetailView.swift */; };
+		2F90A5D8227BDAB900B8A080 /* CreateRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5D7227BDAB900B8A080 /* CreateRide.swift */; };
+		2F90A5DA227BDAD700B8A080 /* CreateRideCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5D9227BDAD700B8A080 /* CreateRideCalendar.swift */; };
+		2F90A5DC227BDAF000B8A080 /* CreateRideTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5DB227BDAF000B8A080 /* CreateRideTimePicker.swift */; };
+		2F90A5DE227BDB0800B8A080 /* CreateRideProtocolsForPassingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5DD227BDB0800B8A080 /* CreateRideProtocolsForPassingData.swift */; };
+		2F90A5E2227BDC4C00B8A080 /* MyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5E1227BDC4C00B8A080 /* MyStatus.swift */; };
+		2F90A5E4227BDC6B00B8A080 /* MyStatusTrashCanHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5E3227BDC6B00B8A080 /* MyStatusTrashCanHeaderCell.swift */; };
+		2F90A5E6227BDC8900B8A080 /* MyStatusDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5E5227BDC8900B8A080 /* MyStatusDetail.swift */; };
+		2F90A5E8227BDC9F00B8A080 /* AcceptedPassengerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5E7227BDC9F00B8A080 /* AcceptedPassengerCollectionViewCell.swift */; };
+		2F90A5EA227BDCB700B8A080 /* PendingPassengerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5E9227BDCB700B8A080 /* PendingPassengerCollectionViewCell.swift */; };
+		2F90A5EC227BDCCD00B8A080 /* PendingPassengerHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5EB227BDCCD00B8A080 /* PendingPassengerHeaderCell.swift */; };
+		2F90A5EE227BDCF300B8A080 /* JoinedRidesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5ED227BDCF300B8A080 /* JoinedRidesDetailView.swift */; };
+		2F90A5F0227BDDBC00B8A080 /* ChatLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5EF227BDDBC00B8A080 /* ChatLogView.swift */; };
+		2F90A5F2227BDDCF00B8A080 /* ChatUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5F1227BDDCF00B8A080 /* ChatUserCell.swift */; };
+		2F90A5F4227BDDE200B8A080 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5F3227BDDE200B8A080 /* ChatMessageCell.swift */; };
+		2F90A5F6227BDDF500B8A080 /* ChatDateSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5F5227BDDF400B8A080 /* ChatDateSectionHeader.swift */; };
+		2F90A5F9227BDEB800B8A080 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5F8227BDEB800B8A080 /* ProfileView.swift */; };
+		2F90A5FB227BDECE00B8A080 /* UserInfoField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5FA227BDECE00B8A080 /* UserInfoField.swift */; };
+		2F90A5FE227BDEF600B8A080 /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5FD227BDEF600B8A080 /* ProfileSettingsView.swift */; };
+		2F90A600227BDF0C00B8A080 /* ProfileSettingsTableViewNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A5FF227BDF0C00B8A080 /* ProfileSettingsTableViewNotificationCell.swift */; };
+		2F90A608227BE06300B8A080 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A607227BE06300B8A080 /* LoginViewController.swift */; };
+		2F90A60B227BE0A200B8A080 /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A60A227BE0A200B8A080 /* SignUpEmailViewController.swift */; };
+		2F90A60D227BE0BB00B8A080 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A60C227BE0BB00B8A080 /* SignUpViewController.swift */; };
+		2F90A60F227BE0D000B8A080 /* EmailSentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A60E227BE0D000B8A080 /* EmailSentViewController.swift */; };
+		2F90A611227BE0E600B8A080 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A610227BE0E600B8A080 /* ResetPasswordViewController.swift */; };
+		2F90A613227BE15B00B8A080 /* OfferedRidesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A612227BE15B00B8A080 /* OfferedRidesCollectionViewController.swift */; };
+		2F90A615227BE17300B8A080 /* CreateRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A614227BE17300B8A080 /* CreateRideViewController.swift */; };
+		2F90A617227BE18800B8A080 /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A616227BE18800B8A080 /* SearchLocationViewController.swift */; };
+		2F90A619227BE1A000B8A080 /* RideDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A618227BE1A000B8A080 /* RideDetailViewController.swift */; };
+		2F90A61B227BE21100B8A080 /* MyStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A61A227BE21100B8A080 /* MyStatusViewController.swift */; };
+		2F90A61D227BE22700B8A080 /* MyStatusDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A61C227BE22700B8A080 /* MyStatusDetailViewController.swift */; };
+		2F90A61F227BE23E00B8A080 /* JoinedRidesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A61E227BE23E00B8A080 /* JoinedRidesDetailViewController.swift */; };
+		2F90A621227BE2B500B8A080 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A620227BE2B500B8A080 /* ChatViewController.swift */; };
+		2F90A623227BE2C800B8A080 /* ChatLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A622227BE2C800B8A080 /* ChatLogViewController.swift */; };
+		2F90A627227BE32300B8A080 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A626227BE32300B8A080 /* ProfileViewController.swift */; };
+		2F90A629227BE33F00B8A080 /* ProfileViewControllerImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A628227BE33F00B8A080 /* ProfileViewControllerImagePicker.swift */; };
+		2F90A62B227BE35600B8A080 /* MyCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A62A227BE35600B8A080 /* MyCarViewController.swift */; };
+		2F90A62D227BE36A00B8A080 /* ProfileSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A62C227BE36A00B8A080 /* ProfileSettingsViewController.swift */; };
+		2F90A62F227BE38A00B8A080 /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A62E227BE38A00B8A080 /* AboutPageViewController.swift */; };
+		2F90A631227BE3A400B8A080 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A630227BE3A400B8A080 /* PrivacyPolicyViewController.swift */; };
+		2F90A633227BE3C500B8A080 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A632227BE3C500B8A080 /* TermsAndConditionsViewController.swift */; };
+		2F90A635227BE5AC00B8A080 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F90A634227BE5AC00B8A080 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		138D29E269B16EB66189AAF9 /* Pods-WePool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePool.release.xcconfig"; path = "Pods/Target Support Files/Pods-WePool/Pods-WePool.release.xcconfig"; sourceTree = "<group>"; };
 		2F90A593227BD49B00B8A080 /* WePool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WePool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F90A596227BD49B00B8A080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F90A598227BD49B00B8A080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F90A59B227BD49B00B8A080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F90A59D227BD49C00B8A080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F90A5A0227BD49C00B8A080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F90A5A2227BD49C00B8A080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F90A5A9227BD56600B8A080 /* RidePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidePost.swift; sourceTree = "<group>"; };
+		2F90A5AB227BD5A500B8A080 /* WePoolUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WePoolUser.swift; sourceTree = "<group>"; };
+		2F90A5AD227BD5D000B8A080 /* RideRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequest.swift; sourceTree = "<group>"; };
+		2F90A5AF227BD60100B8A080 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2F90A5B6227BD7BE00B8A080 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		2F90A5B8227BD80300B8A080 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		2F90A5BA227BD83600B8A080 /* UIView+UIButtons+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIButtons+UITextField.swift"; sourceTree = "<group>"; };
+		2F90A5BC227BD85E00B8A080 /* Encodable+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Decodable.swift"; sourceTree = "<group>"; };
+		2F90A5BE227BD88500B8A080 /* UIDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDate.swift; sourceTree = "<group>"; };
+		2F90A5C0227BD8A900B8A080 /* UICollectionView + UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + UITableView.swift"; sourceTree = "<group>"; };
+		2F90A5C2227BD8DA00B8A080 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F90A5CA227BD9CD00B8A080 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2F90A5CC227BD9F700B8A080 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		2F90A5CE227BDA3300B8A080 /* OfferedRides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferedRides.swift; sourceTree = "<group>"; };
+		2F90A5D0227BDA4D00B8A080 /* OfferedRidesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferedRidesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F90A5D2227BDA6400B8A080 /* OfferedRidesSectionHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferedRidesSectionHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F90A5D4227BDA7B00B8A080 /* RideDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailView.swift; sourceTree = "<group>"; };
+		2F90A5D7227BDAB900B8A080 /* CreateRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRide.swift; sourceTree = "<group>"; };
+		2F90A5D9227BDAD700B8A080 /* CreateRideCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRideCalendar.swift; sourceTree = "<group>"; };
+		2F90A5DB227BDAF000B8A080 /* CreateRideTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRideTimePicker.swift; sourceTree = "<group>"; };
+		2F90A5DD227BDB0800B8A080 /* CreateRideProtocolsForPassingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRideProtocolsForPassingData.swift; sourceTree = "<group>"; };
+		2F90A5E1227BDC4C00B8A080 /* MyStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatus.swift; sourceTree = "<group>"; };
+		2F90A5E3227BDC6B00B8A080 /* MyStatusTrashCanHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusTrashCanHeaderCell.swift; sourceTree = "<group>"; };
+		2F90A5E5227BDC8900B8A080 /* MyStatusDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusDetail.swift; sourceTree = "<group>"; };
+		2F90A5E7227BDC9F00B8A080 /* AcceptedPassengerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptedPassengerCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F90A5E9227BDCB700B8A080 /* PendingPassengerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingPassengerCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F90A5EB227BDCCD00B8A080 /* PendingPassengerHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingPassengerHeaderCell.swift; sourceTree = "<group>"; };
+		2F90A5ED227BDCF300B8A080 /* JoinedRidesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedRidesDetailView.swift; sourceTree = "<group>"; };
+		2F90A5EF227BDDBC00B8A080 /* ChatLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogView.swift; sourceTree = "<group>"; };
+		2F90A5F1227BDDCF00B8A080 /* ChatUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUserCell.swift; sourceTree = "<group>"; };
+		2F90A5F3227BDDE200B8A080 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		2F90A5F5227BDDF400B8A080 /* ChatDateSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDateSectionHeader.swift; sourceTree = "<group>"; };
+		2F90A5F8227BDEB800B8A080 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2F90A5FA227BDECE00B8A080 /* UserInfoField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoField.swift; sourceTree = "<group>"; };
+		2F90A5FD227BDEF600B8A080 /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
+		2F90A5FF227BDF0C00B8A080 /* ProfileSettingsTableViewNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsTableViewNotificationCell.swift; sourceTree = "<group>"; };
+		2F90A607227BE06300B8A080 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F90A60A227BE0A200B8A080 /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewController.swift; sourceTree = "<group>"; };
+		2F90A60C227BE0BB00B8A080 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2F90A60E227BE0D000B8A080 /* EmailSentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSentViewController.swift; sourceTree = "<group>"; };
+		2F90A610227BE0E600B8A080 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		2F90A612227BE15B00B8A080 /* OfferedRidesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferedRidesCollectionViewController.swift; sourceTree = "<group>"; };
+		2F90A614227BE17300B8A080 /* CreateRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRideViewController.swift; sourceTree = "<group>"; };
+		2F90A616227BE18800B8A080 /* SearchLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
+		2F90A618227BE1A000B8A080 /* RideDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideDetailViewController.swift; sourceTree = "<group>"; };
+		2F90A61A227BE21100B8A080 /* MyStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusViewController.swift; sourceTree = "<group>"; };
+		2F90A61C227BE22700B8A080 /* MyStatusDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusDetailViewController.swift; sourceTree = "<group>"; };
+		2F90A61E227BE23E00B8A080 /* JoinedRidesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedRidesDetailViewController.swift; sourceTree = "<group>"; };
+		2F90A620227BE2B500B8A080 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		2F90A622227BE2C800B8A080 /* ChatLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogViewController.swift; sourceTree = "<group>"; };
+		2F90A626227BE32300B8A080 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2F90A628227BE33F00B8A080 /* ProfileViewControllerImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerImagePicker.swift; sourceTree = "<group>"; };
+		2F90A62A227BE35600B8A080 /* MyCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarViewController.swift; sourceTree = "<group>"; };
+		2F90A62C227BE36A00B8A080 /* ProfileSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewController.swift; sourceTree = "<group>"; };
+		2F90A62E227BE38A00B8A080 /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
+		2F90A630227BE3A400B8A080 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		2F90A632227BE3C500B8A080 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		2F90A634227BE5AC00B8A080 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B707A1602A0D12136AB5DDC /* Pods_WePool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WePool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C69DF99D6D33ED9FA08B3996 /* Pods-WePool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WePool/Pods-WePool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +147,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2027846A606560C50F146538 /* Pods_WePool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8A6780227BF771008FF612 /* Request Rides */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Request Rides";
+			sourceTree = "<group>";
+		};
+		2F8A6781227BF7AA008FF612 /* Request Rides */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Request Rides";
+			sourceTree = "<group>";
+		};
 		2F90A58A227BD49B00B8A080 = {
 			isa = PBXGroup;
 			children = (
 				2F90A595227BD49B00B8A080 /* WePool */,
 				2F90A594227BD49B00B8A080 /* Products */,
+				56A47B66A99432EABB72849B /* Pods */,
+				D6AACDBE8DBBCABF14132B5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +189,290 @@
 		2F90A595227BD49B00B8A080 /* WePool */ = {
 			isa = PBXGroup;
 			children = (
-				2F90A596227BD49B00B8A080 /* AppDelegate.swift */,
-				2F90A598227BD49B00B8A080 /* ViewController.swift */,
-				2F90A59A227BD49B00B8A080 /* Main.storyboard */,
 				2F90A59D227BD49C00B8A080 /* Assets.xcassets */,
-				2F90A59F227BD49C00B8A080 /* LaunchScreen.storyboard */,
+				2F90A596227BD49B00B8A080 /* AppDelegate.swift */,
+				2F90A634227BE5AC00B8A080 /* GoogleService-Info.plist */,
 				2F90A5A2227BD49C00B8A080 /* Info.plist */,
+				2F90A5B4227BD69500B8A080 /* Extensions */,
+				2F90A5B5227BD6A000B8A080 /* Constants */,
+				2F90A5A8227BD4EE00B8A080 /* Model */,
+				2F90A5B1227BD61D00B8A080 /* View */,
+				2F90A5B3227BD65E00B8A080 /* View Controllers */,
+				2F90A5B2227BD64300B8A080 /* Storyboards */,
 			);
 			path = WePool;
+			sourceTree = "<group>";
+		};
+		2F90A5A8227BD4EE00B8A080 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5A9227BD56600B8A080 /* RidePost.swift */,
+				2F90A5AB227BD5A500B8A080 /* WePoolUser.swift */,
+				2F90A5AD227BD5D000B8A080 /* RideRequest.swift */,
+				2F90A5AF227BD60100B8A080 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F90A5B1227BD61D00B8A080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A6780227BF771008FF612 /* Request Rides */,
+				2F90A5C4227BD92000B8A080 /* Login */,
+				2F90A5C5227BD92C00B8A080 /* Sign Up */,
+				2F90A5C6227BD93600B8A080 /* Offered Rides */,
+				2F90A5C7227BD94400B8A080 /* My Status */,
+				2F90A5C8227BD94C00B8A080 /* Chat */,
+				2F90A5C9227BD95800B8A080 /* My Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F90A5B2227BD64300B8A080 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A59A227BD49B00B8A080 /* Main.storyboard */,
+				2F90A59F227BD49C00B8A080 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2F90A5B3227BD65E00B8A080 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A6781227BF7AA008FF612 /* Request Rides */,
+				2F90A601227BDFD900B8A080 /* Login */,
+				2F90A602227BDFF200B8A080 /* Sign Up */,
+				2F90A603227BDFFF00B8A080 /* Offered Rides */,
+				2F90A604227BE00C00B8A080 /* My Status */,
+				2F90A605227BE01600B8A080 /* Chat */,
+				2F90A606227BE02400B8A080 /* My Profile */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2F90A5B4227BD69500B8A080 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5B6227BD7BE00B8A080 /* UIColor.swift */,
+				2F90A5B8227BD80300B8A080 /* UIImageView.swift */,
+				2F90A5BA227BD83600B8A080 /* UIView+UIButtons+UITextField.swift */,
+				2F90A5BC227BD85E00B8A080 /* Encodable+Decodable.swift */,
+				2F90A5BE227BD88500B8A080 /* UIDate.swift */,
+				2F90A5C0227BD8A900B8A080 /* UICollectionView + UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F90A5B5227BD6A000B8A080 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5C2227BD8DA00B8A080 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		2F90A5C4227BD92000B8A080 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5CA227BD9CD00B8A080 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F90A5C5227BD92C00B8A080 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5CC227BD9F700B8A080 /* SignUpView.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		2F90A5C6227BD93600B8A080 /* Offered Rides */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5CE227BDA3300B8A080 /* OfferedRides.swift */,
+				2F90A5D0227BDA4D00B8A080 /* OfferedRidesCollectionViewCell.swift */,
+				2F90A5D2227BDA6400B8A080 /* OfferedRidesSectionHeaderCollectionViewCell.swift */,
+				2F90A5D4227BDA7B00B8A080 /* RideDetailView.swift */,
+				2F90A5D6227BDA9000B8A080 /* Create A Ride */,
+			);
+			path = "Offered Rides";
+			sourceTree = "<group>";
+		};
+		2F90A5C7227BD94400B8A080 /* My Status */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5E1227BDC4C00B8A080 /* MyStatus.swift */,
+				2F90A5E3227BDC6B00B8A080 /* MyStatusTrashCanHeaderCell.swift */,
+				2F90A5DF227BDC0200B8A080 /* My Status Detail */,
+				2F90A5E0227BDC1200B8A080 /* Joined Rides Detail */,
+			);
+			path = "My Status";
+			sourceTree = "<group>";
+		};
+		2F90A5C8227BD94C00B8A080 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5EF227BDDBC00B8A080 /* ChatLogView.swift */,
+				2F90A5F1227BDDCF00B8A080 /* ChatUserCell.swift */,
+				2F90A5F3227BDDE200B8A080 /* ChatMessageCell.swift */,
+				2F90A5F5227BDDF400B8A080 /* ChatDateSectionHeader.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		2F90A5C9227BD95800B8A080 /* My Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5F8227BDEB800B8A080 /* ProfileView.swift */,
+				2F90A5FA227BDECE00B8A080 /* UserInfoField.swift */,
+				2F90A5F7227BDE9C00B8A080 /* My Profile Settings */,
+			);
+			path = "My Profile";
+			sourceTree = "<group>";
+		};
+		2F90A5D6227BDA9000B8A080 /* Create A Ride */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5D7227BDAB900B8A080 /* CreateRide.swift */,
+				2F90A5D9227BDAD700B8A080 /* CreateRideCalendar.swift */,
+				2F90A5DB227BDAF000B8A080 /* CreateRideTimePicker.swift */,
+				2F90A5DD227BDB0800B8A080 /* CreateRideProtocolsForPassingData.swift */,
+			);
+			path = "Create A Ride";
+			sourceTree = "<group>";
+		};
+		2F90A5DF227BDC0200B8A080 /* My Status Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5E5227BDC8900B8A080 /* MyStatusDetail.swift */,
+				2F90A5E7227BDC9F00B8A080 /* AcceptedPassengerCollectionViewCell.swift */,
+				2F90A5E9227BDCB700B8A080 /* PendingPassengerCollectionViewCell.swift */,
+				2F90A5EB227BDCCD00B8A080 /* PendingPassengerHeaderCell.swift */,
+			);
+			path = "My Status Detail";
+			sourceTree = "<group>";
+		};
+		2F90A5E0227BDC1200B8A080 /* Joined Rides Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5ED227BDCF300B8A080 /* JoinedRidesDetailView.swift */,
+			);
+			path = "Joined Rides Detail";
+			sourceTree = "<group>";
+		};
+		2F90A5F7227BDE9C00B8A080 /* My Profile Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A5FD227BDEF600B8A080 /* ProfileSettingsView.swift */,
+				2F90A5FF227BDF0C00B8A080 /* ProfileSettingsTableViewNotificationCell.swift */,
+			);
+			path = "My Profile Settings";
+			sourceTree = "<group>";
+		};
+		2F90A601227BDFD900B8A080 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A607227BE06300B8A080 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F90A602227BDFF200B8A080 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A60A227BE0A200B8A080 /* SignUpEmailViewController.swift */,
+				2F90A60C227BE0BB00B8A080 /* SignUpViewController.swift */,
+				2F90A60E227BE0D000B8A080 /* EmailSentViewController.swift */,
+				2F90A609227BE08500B8A080 /* Reset Password */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		2F90A603227BDFFF00B8A080 /* Offered Rides */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A612227BE15B00B8A080 /* OfferedRidesCollectionViewController.swift */,
+				2F90A614227BE17300B8A080 /* CreateRideViewController.swift */,
+				2F90A616227BE18800B8A080 /* SearchLocationViewController.swift */,
+				2F90A618227BE1A000B8A080 /* RideDetailViewController.swift */,
+			);
+			path = "Offered Rides";
+			sourceTree = "<group>";
+		};
+		2F90A604227BE00C00B8A080 /* My Status */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A61A227BE21100B8A080 /* MyStatusViewController.swift */,
+				2F90A61C227BE22700B8A080 /* MyStatusDetailViewController.swift */,
+				2F90A61E227BE23E00B8A080 /* JoinedRidesDetailViewController.swift */,
+			);
+			path = "My Status";
+			sourceTree = "<group>";
+		};
+		2F90A605227BE01600B8A080 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A620227BE2B500B8A080 /* ChatViewController.swift */,
+				2F90A622227BE2C800B8A080 /* ChatLogViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		2F90A606227BE02400B8A080 /* My Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A626227BE32300B8A080 /* ProfileViewController.swift */,
+				2F90A628227BE33F00B8A080 /* ProfileViewControllerImagePicker.swift */,
+				2F90A624227BE30200B8A080 /* My Car */,
+				2F90A625227BE30800B8A080 /* Profile Settings */,
+			);
+			path = "My Profile";
+			sourceTree = "<group>";
+		};
+		2F90A609227BE08500B8A080 /* Reset Password */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A610227BE0E600B8A080 /* ResetPasswordViewController.swift */,
+			);
+			path = "Reset Password";
+			sourceTree = "<group>";
+		};
+		2F90A624227BE30200B8A080 /* My Car */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A62A227BE35600B8A080 /* MyCarViewController.swift */,
+			);
+			path = "My Car";
+			sourceTree = "<group>";
+		};
+		2F90A625227BE30800B8A080 /* Profile Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2F90A62C227BE36A00B8A080 /* ProfileSettingsViewController.swift */,
+				2F90A62E227BE38A00B8A080 /* AboutPageViewController.swift */,
+				2F90A630227BE3A400B8A080 /* PrivacyPolicyViewController.swift */,
+				2F90A632227BE3C500B8A080 /* TermsAndConditionsViewController.swift */,
+			);
+			path = "Profile Settings";
+			sourceTree = "<group>";
+		};
+		56A47B66A99432EABB72849B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C69DF99D6D33ED9FA08B3996 /* Pods-WePool.debug.xcconfig */,
+				138D29E269B16EB66189AAF9 /* Pods-WePool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D6AACDBE8DBBCABF14132B5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B707A1602A0D12136AB5DDC /* Pods_WePool.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +482,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F90A5A5227BD49C00B8A080 /* Build configuration list for PBXNativeTarget "WePool" */;
 			buildPhases = (
+				806D5B2CA9EE574871A86E76 /* [CP] Check Pods Manifest.lock */,
 				2F90A58F227BD49B00B8A080 /* Sources */,
 				2F90A590227BD49B00B8A080 /* Frameworks */,
 				2F90A591227BD49B00B8A080 /* Resources */,
+				E8A4671DB5CC3CDC0CD9A7B8 /* [CP] Embed Pods Frameworks */,
+				F81CA1EA2EC43201F7666CBB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F90A5A1227BD49C00B8A080 /* LaunchScreen.storyboard in Resources */,
+				2F90A635227BE5AC00B8A080 /* GoogleService-Info.plist in Resources */,
 				2F90A59E227BD49C00B8A080 /* Assets.xcassets in Resources */,
 				2F90A59C227BD49B00B8A080 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +545,148 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		806D5B2CA9EE574871A86E76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WePool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A4671DB5CC3CDC0CD9A7B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WePool/Pods-WePool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/KDCalendar/KDCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WePool/Pods-WePool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81CA1EA2EC43201F7666CBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WePool/Pods-WePool-resources.sh",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WePool/Pods-WePool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F90A58F227BD49B00B8A080 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F90A599227BD49B00B8A080 /* ViewController.swift in Sources */,
+				2F90A61D227BE22700B8A080 /* MyStatusDetailViewController.swift in Sources */,
+				2F90A5E6227BDC8900B8A080 /* MyStatusDetail.swift in Sources */,
+				2F90A5D5227BDA7B00B8A080 /* RideDetailView.swift in Sources */,
+				2F90A5EC227BDCCD00B8A080 /* PendingPassengerHeaderCell.swift in Sources */,
+				2F90A615227BE17300B8A080 /* CreateRideViewController.swift in Sources */,
+				2F90A5C1227BD8A900B8A080 /* UICollectionView + UITableView.swift in Sources */,
+				2F90A62B227BE35600B8A080 /* MyCarViewController.swift in Sources */,
+				2F90A5FE227BDEF600B8A080 /* ProfileSettingsView.swift in Sources */,
+				2F90A5CD227BD9F700B8A080 /* SignUpView.swift in Sources */,
+				2F90A5E2227BDC4C00B8A080 /* MyStatus.swift in Sources */,
+				2F90A5F6227BDDF500B8A080 /* ChatDateSectionHeader.swift in Sources */,
+				2F90A60D227BE0BB00B8A080 /* SignUpViewController.swift in Sources */,
+				2F90A5E8227BDC9F00B8A080 /* AcceptedPassengerCollectionViewCell.swift in Sources */,
+				2F90A5B9227BD80300B8A080 /* UIImageView.swift in Sources */,
+				2F90A5AC227BD5A500B8A080 /* WePoolUser.swift in Sources */,
+				2F90A5E4227BDC6B00B8A080 /* MyStatusTrashCanHeaderCell.swift in Sources */,
+				2F90A62F227BE38A00B8A080 /* AboutPageViewController.swift in Sources */,
+				2F90A633227BE3C500B8A080 /* TermsAndConditionsViewController.swift in Sources */,
+				2F90A5DE227BDB0800B8A080 /* CreateRideProtocolsForPassingData.swift in Sources */,
+				2F90A5F9227BDEB800B8A080 /* ProfileView.swift in Sources */,
+				2F90A611227BE0E600B8A080 /* ResetPasswordViewController.swift in Sources */,
+				2F90A5F2227BDDCF00B8A080 /* ChatUserCell.swift in Sources */,
+				2F90A5B7227BD7BE00B8A080 /* UIColor.swift in Sources */,
+				2F90A5BF227BD88500B8A080 /* UIDate.swift in Sources */,
+				2F90A5D3227BDA6400B8A080 /* OfferedRidesSectionHeaderCollectionViewCell.swift in Sources */,
+				2F90A5AE227BD5D000B8A080 /* RideRequest.swift in Sources */,
+				2F90A5DA227BDAD700B8A080 /* CreateRideCalendar.swift in Sources */,
+				2F90A5F4227BDDE200B8A080 /* ChatMessageCell.swift in Sources */,
+				2F90A5C3227BD8DA00B8A080 /* Constants.swift in Sources */,
+				2F90A600227BDF0C00B8A080 /* ProfileSettingsTableViewNotificationCell.swift in Sources */,
+				2F90A621227BE2B500B8A080 /* ChatViewController.swift in Sources */,
+				2F90A608227BE06300B8A080 /* LoginViewController.swift in Sources */,
+				2F90A62D227BE36A00B8A080 /* ProfileSettingsViewController.swift in Sources */,
+				2F90A5EE227BDCF300B8A080 /* JoinedRidesDetailView.swift in Sources */,
+				2F90A623227BE2C800B8A080 /* ChatLogViewController.swift in Sources */,
+				2F90A627227BE32300B8A080 /* ProfileViewController.swift in Sources */,
+				2F90A617227BE18800B8A080 /* SearchLocationViewController.swift in Sources */,
+				2F90A5D1227BDA4D00B8A080 /* OfferedRidesCollectionViewCell.swift in Sources */,
+				2F90A61F227BE23E00B8A080 /* JoinedRidesDetailViewController.swift in Sources */,
+				2F90A5CB227BD9CD00B8A080 /* LoginView.swift in Sources */,
+				2F90A61B227BE21100B8A080 /* MyStatusViewController.swift in Sources */,
+				2F90A5FB227BDECE00B8A080 /* UserInfoField.swift in Sources */,
+				2F90A5EA227BDCB700B8A080 /* PendingPassengerCollectionViewCell.swift in Sources */,
+				2F90A631227BE3A400B8A080 /* PrivacyPolicyViewController.swift in Sources */,
+				2F90A5F0227BDDBC00B8A080 /* ChatLogView.swift in Sources */,
+				2F90A60B227BE0A200B8A080 /* SignUpEmailViewController.swift in Sources */,
+				2F90A629227BE33F00B8A080 /* ProfileViewControllerImagePicker.swift in Sources */,
+				2F90A613227BE15B00B8A080 /* OfferedRidesCollectionViewController.swift in Sources */,
+				2F90A60F227BE0D000B8A080 /* EmailSentViewController.swift in Sources */,
+				2F90A619227BE1A000B8A080 /* RideDetailViewController.swift in Sources */,
+				2F90A5BD227BD85E00B8A080 /* Encodable+Decodable.swift in Sources */,
+				2F90A5B0227BD60100B8A080 /* Message.swift in Sources */,
+				2F90A5DC227BDAF000B8A080 /* CreateRideTimePicker.swift in Sources */,
+				2F90A5D8227BDAB900B8A080 /* CreateRide.swift in Sources */,
+				2F90A5BB227BD83600B8A080 /* UIView+UIButtons+UITextField.swift in Sources */,
 				2F90A597227BD49B00B8A080 /* AppDelegate.swift in Sources */,
+				2F90A5AA227BD56600B8A080 /* RidePost.swift in Sources */,
+				2F90A5CF227BDA3300B8A080 /* OfferedRides.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +830,7 @@
 		};
 		2F90A5A6227BD49C00B8A080 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69DF99D6D33ED9FA08B3996 /* Pods-WePool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +849,7 @@
 		};
 		2F90A5A7227BD49C00B8A080 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138D29E269B16EB66189AAF9 /* Pods-WePool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

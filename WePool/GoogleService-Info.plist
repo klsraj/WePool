@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>220205814555-q07r5kqb60bd6hmav18dtl5k8qm1m5fq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.220205814555-q07r5kqb60bd6hmav18dtl5k8qm1m5fq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDiP75lA6vnuVN2F_i3Jitcj93pXfRwY1Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>220205814555</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.WePool-Co.WePool</string>
+	<key>PROJECT_ID</key>
+	<string>wepool-73a60</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wepool-73a60.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:220205814555:ios:4cd87fa01f0ad61a</string>
+	<key>DATABASE_URL</key>
+	<string>https://wepool-73a60.firebaseio.com</string>
+</dict>
+</plist>
