@@ -37,6 +37,28 @@ class LoginView : UIView{
         return txtField
     }()
     
+    let facebookButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("Login with Facebook", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.titleLabel?.font = UIFont(name: Fonts.helvetica, size: 24)
+        button.backgroundColor = UIColor.blue
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
+    let googleButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("Login with Google", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.titleLabel?.font = UIFont(name: Fonts.helvetica, size: 24)
+        button.backgroundColor = UIColor.red
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
     let loginButton : UIButton = {
         let button = UIButton()
         button.setTitle(Strings.login, for: .normal)
@@ -84,7 +106,7 @@ class LoginView : UIView{
     
     let errorLabel : UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
+        label.font = UIFont.systemFont(ofSize: 20)
         label.textColor = UIColor.red
         return label
     }()
@@ -116,7 +138,7 @@ class LoginView : UIView{
         bottomlabelStackView.alignment = .center
         
         //Bottom stack view
-        bottomStackView = UIStackView(arrangedSubviews: [ emptyUIView, emailTextField, passwordTextField, errorLabel ,loginButton,bottomlabelStackView])
+        bottomStackView = UIStackView(arrangedSubviews: [ emptyUIView, emailTextField, passwordTextField, errorLabel, facebookButton, googleButton, loginButton,bottomlabelStackView])
         bottomStackView.axis = .vertical
         bottomStackView.distribution = .fillEqually
         bottomStackView.spacing = 25
@@ -174,16 +196,24 @@ class LoginView : UIView{
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
         emailTextField.widthAnchor.constraint(equalTo: bottomStackView.widthAnchor, multiplier: 0.8).isActive = true
         
+        //Facebook Button Constraints
+        facebookButton.translatesAutoresizingMaskIntoConstraints = false
+        facebookButton.widthAnchor.constraint(equalTo: bottomStackView.widthAnchor, multiplier: 0.8).isActive = true
+        
+        //Google Button Constraints
+        googleButton.translatesAutoresizingMaskIntoConstraints = false
+        googleButton.widthAnchor.constraint(equalTo: bottomStackView.widthAnchor, multiplier: 0.8).isActive = true
+        
         //Login Button Constraints
         loginButton.translatesAutoresizingMaskIntoConstraints = false
-        loginButton.widthAnchor.constraint(equalTo: bottomStackView.widthAnchor, multiplier: 0.4).isActive = true
+        loginButton.widthAnchor.constraint(equalTo: bottomStackView.widthAnchor, multiplier: 0.8).isActive = true
         
         //Umass Image constraints
         umassBackgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         umassBackgroundImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        umassBackgroundImageView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor)
-        umassBackgroundImageView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor).isActive = true
-        umassBackgroundImageView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 1).isActive = true
+        umassBackgroundImageView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor).isActive = true
+        umassBackgroundImageView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor)
+        umassBackgroundImageView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, constant: 15).isActive = true
         
     }
 }
