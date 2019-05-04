@@ -8,6 +8,7 @@ target 'WePool' do
   # Pods for WePool
 
 pod 'GooglePlaces'
+pod 'GoogleMaps'
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'

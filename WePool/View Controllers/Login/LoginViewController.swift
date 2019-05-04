@@ -33,6 +33,8 @@ class LoginViewController: UIViewController, NVActivityIndicatorViewable {
     // Set Up View
     let loginView : LoginView = {
         let loginView = LoginView()
+        loginView.facebookButton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        loginView.googleButton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         loginView.loginButton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         loginView.forgotPwdButton.addTarget(self, action: #selector(handleForgottenPwd), for: .touchUpInside)
         loginView.signUpButton.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
@@ -96,7 +98,7 @@ class LoginViewController: UIViewController, NVActivityIndicatorViewable {
                 }
                 return
             }
-            
+
             guard self.authUser?.isEmailVerified == true else {
                 self.loginView.errorLabel.text = "Account not verified. Please check your email for verification"
                 self.stopAnimating()

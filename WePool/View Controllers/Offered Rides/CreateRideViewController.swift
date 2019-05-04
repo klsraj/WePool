@@ -231,7 +231,7 @@ class CreateRideViewController: UIViewController {
     
     //Create Button View
     let createRideButton : UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("CREATE", for: .normal)
         button.setTitleColor(Colors.maroon, for: .normal)
         button.titleLabel?.font = UIFont(name: Fonts.helvetica, size: 18)

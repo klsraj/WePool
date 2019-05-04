@@ -11,6 +11,7 @@ import Firebase
 import GooglePlaces
 import UserNotifications
 import FirebaseMessaging
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
@@ -20,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let googleAPIKey = "AIzaSyCA7Zio35GKOQkTXL0DJt8gGabNPkJOD_o"
+        let googleAPIKey = "AIzaSyAXN0jem6XyE5JX_EvBuRQW2SKXVnR4fyo"
+        GMSServices.provideAPIKey(googleAPIKey)
         GMSPlacesClient.provideAPIKey(googleAPIKey)
         FirebaseApp.configure()
         let db = Firestore.firestore()

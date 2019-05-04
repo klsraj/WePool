@@ -38,44 +38,48 @@ class LoginView : UIView{
     }()
     
     let facebookButton : UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("Login with Facebook", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.titleLabel?.font = UIFont(name: Fonts.helvetica, size: 24)
         button.backgroundColor = UIColor.blue
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 10
+        button.showsTouchWhenHighlighted = true
         return button
     }()
     
     let googleButton : UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("Login with Google", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.titleLabel?.font = UIFont(name: Fonts.helvetica, size: 24)
         button.backgroundColor = UIColor.red
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 10
+        button.showsTouchWhenHighlighted = true
         return button
     }()
     
     let loginButton : UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle(Strings.login, for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.titleLabel?.font = UIFont(name: Fonts.helvetica, size: 24)
         button.backgroundColor = Colors.maroon
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 10
+        button.showsTouchWhenHighlighted = true
         return button
     }()
     
     let forgotPwdButton : UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle(Strings.forgotPwd, for: .normal)
         button.setTitleColor(Colors.maroon, for: .normal)
         button.titleLabel?.font = UIFont(name: Fonts.helvetica, size: 14)
         button.backgroundColor = UIColor.clear
+        button.showsTouchWhenHighlighted = true
         return button
     }()
     
@@ -87,11 +91,12 @@ class LoginView : UIView{
     }()
     
     let signUpButton : UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle(Strings.signUp, for: .normal)
         button.setTitleColor(Colors.maroon, for: .normal)
         button.titleLabel?.font = UIFont(name: Fonts.helvetica, size: 14)
         button.backgroundColor = UIColor.clear
+        button.showsTouchWhenHighlighted = true
         return button
     }()
     

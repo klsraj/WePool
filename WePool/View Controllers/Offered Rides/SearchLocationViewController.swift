@@ -8,6 +8,9 @@
 
 import UIKit
 import GooglePlaces
+import GoogleMapsBase
+import MapKit
+import GoogleMaps
 
 class SearchLocationViewController: UIViewController {
     
@@ -16,6 +19,9 @@ class SearchLocationViewController: UIViewController {
     
     var delegate : ModalPassDataDelegate? = nil
     var forDeparture : Bool? = true
+    
+    var latitude = 0.0
+    var longitude = 0.0
     
     lazy var resultsViewController: GMSAutocompleteResultsViewController = {
         let resultsViewController = GMSAutocompleteResultsViewController()
@@ -30,21 +36,23 @@ class SearchLocationViewController: UIViewController {
         return searchController
     }()
     
-    let topView : UIView = {
-        let view = UIView()
-        return view
-    }()
+//    let topView : UIView = {
+//        let view = UIView()
+//        return view
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
-        
+        let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 6.0)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
         setupNavBarAndSearchBar()
-        
         // This makes the view area include the nav bar even though it is opaque.
         // Adjust the view placement down.
-        
+    
     }
+    
+
     
     func setupNavBarAndSearchBar(){
         navigationController?.navigationBar.barTintColor = Colors.maroon
@@ -71,6 +79,7 @@ extension SearchLocationViewController: GMSAutocompleteResultsViewControllerDele
         
         // Do something with the selected place.
         let components = place.addressComponents
+        
         var city : String?
         var state : String?
         if let componentsEnum = components?.enumerated(){
