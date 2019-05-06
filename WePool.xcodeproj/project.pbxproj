@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2027846A606560C50F146538 /* Pods_WePool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B707A1602A0D12136AB5DDC /* Pods_WePool.framework */; };
+		2F6EB3A6227FA08B003D3ED4 /* RequestedRidesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6EB3A5227FA08B003D3ED4 /* RequestedRidesCollectionViewController.swift */; };
 		2F90A597227BD49B00B8A080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F90A596227BD49B00B8A080 /* AppDelegate.swift */; };
 		2F90A59C227BD49B00B8A080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F90A59A227BD49B00B8A080 /* Main.storyboard */; };
 		2F90A59E227BD49C00B8A080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F90A59D227BD49C00B8A080 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		138D29E269B16EB66189AAF9 /* Pods-WePool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WePool.release.xcconfig"; path = "Pods/Target Support Files/Pods-WePool/Pods-WePool.release.xcconfig"; sourceTree = "<group>"; };
+		2F6EB3A5227FA08B003D3ED4 /* RequestedRidesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RequestedRidesCollectionViewController.swift; path = WePool/Model/RequestedRidesCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F90A593227BD49B00B8A080 /* WePool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WePool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F90A596227BD49B00B8A080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F90A59B227BD49B00B8A080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		2F8A6781227BF7AA008FF612 /* Request Rides */ = {
 			isa = PBXGroup;
 			children = (
+				2F6EB3A5227FA08B003D3ED4 /* RequestedRidesCollectionViewController.swift */,
 			);
 			path = "Request Rides";
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				2F90A5DC227BDAF000B8A080 /* CreateRideTimePicker.swift in Sources */,
 				2F90A5D8227BDAB900B8A080 /* CreateRide.swift in Sources */,
 				2F90A5BB227BD83600B8A080 /* UIView+UIButtons+UITextField.swift in Sources */,
+				2F6EB3A6227FA08B003D3ED4 /* RequestedRidesCollectionViewController.swift in Sources */,
 				2F90A597227BD49B00B8A080 /* AppDelegate.swift in Sources */,
 				2F90A5AA227BD56600B8A080 /* RidePost.swift in Sources */,
 				2F90A5CF227BDA3300B8A080 /* OfferedRides.swift in Sources */,

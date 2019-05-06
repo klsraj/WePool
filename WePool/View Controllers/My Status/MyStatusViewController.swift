@@ -75,7 +75,7 @@ class MyStatusViewController: UICollectionViewController  {
         //Retrieve Data
         let docRef = db.collection(FirebaseDatabaseKeys.ridePostsKey)
         
-        docRef.order(by: "departureDate", descending: false).whereField("departureDate", isGreaterThan: Date().timeIntervalSinceReferenceDate).whereField("driverUid", isEqualTo: authUser.uid).getDocuments { (querySnapshot, err) in
+        docRef.order(by: "departureDate", descending: false).whereField("departureDate", isGreaterThanOrEqualTo: Date.timeIntervalSinceReferenceDate).whereField("driverUid", isEqualTo: authUser.uid).getDocuments { (querySnapshot, err) in
             if let err = err {
             } else {
                 for document in querySnapshot!.documents {
