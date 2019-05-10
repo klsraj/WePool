@@ -127,7 +127,7 @@ class MyStatusViewController: UICollectionViewController  {
                 } else {
                     if let post = RidePost(dictionary: (snapshot?.data())!), let date = post.departureDate{
                         //If the ride is in the near future
-                        if date >= Date(){
+                        if date > Date(){
                             if request.requestStatus == 0{
                                 self.pendingRidePosts.append(post)
                             } else if request.requestStatus == 1{
